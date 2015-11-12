@@ -1,2 +1,7 @@
 # rapidansible
-This Docker is going to copy over the playbook.yml and the ansible directory and provisions that play file localy inside the docker.
+Bootstraps a boilerplate ansible environment.
+This dockerfile was created with the intention to build more complex setupsteps in one docker layer.
+
+1. Onbuild copy local content to WORKDIR 
+2. Onbuild starts provisioning the playbook.yml localy
+3. Onbuild removes its rights to become root
